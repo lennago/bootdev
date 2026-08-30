@@ -1,0 +1,86 @@
+GET http://localhost:8080/app
+
+###
+
+POST http://localhost:8080/admin/reset
+
+###
+
+GET http://localhost:8080/admin/metrics
+
+###
+
+GET http://localhost:8080/api/healthz
+
+###
+
+GET http://localhost:8080/app/assets/logo.png
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "insecure-password"
+}
+
+###
+
+PUT http://localhost:8080/api/users
+Content-Type: application/json
+Authorization: Bearer <insert>
+
+{
+    "email": "test@example.com",
+    "password": "a-bit-more-secure-password"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "insecure-password"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "wrong-password"
+}
+
+###
+
+POST http://localhost:8080/api/chirps
+Content-Type: application/json
+Authorization: Bearer <insert>
+
+{
+    "body": "This is a test chirp!"
+}
+
+###
+
+POST http://localhost:8080/api/chirps
+Content-Type: application/json
+Authorization: Bearer <insert>
+
+{
+    "body": "This is a too long test chirp! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales metus in magna pulvinar ultricies. Nam condimentum velit tristique dolor."
+}
+
+###
+
+GET http://localhost:8080/api/chirps
+
+###
+
+GET http://localhost:8080/api/chirps/<insert>
