@@ -1,11 +1,15 @@
-name: ci
+name: pokedexcli
 
 on:
   pull_request:
     paths:
-      - '.github/workflows/ci.yml'
-      - 'learn-cicd/**'
+      - '.github/workflows/pokedexcli.yml'
+      - 'pokedexcli/**'
     branches: [main]
+  push:
+    paths:
+      - '.github/workflows/pokedexcli.yml'
+      - 'pokedexcli/**'
 
 jobs:
   tests:
@@ -27,12 +31,6 @@ jobs:
 
       - name: Run unit tests
         run: go test ./... -cover
-      
-      - name: Install gosec
-        run: go install github.com/securego/gosec/v2/cmd/gosec@latest
-      
-      - name: Run gosec
-        run: gosec ./...
 
   style:
     name: Style
