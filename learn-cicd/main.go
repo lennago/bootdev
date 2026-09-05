@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	"embed"
-	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -96,10 +95,4 @@ func main() {
 
 	log.Printf("Serving on port: %s\n", port)
 	log.Fatal(srv.ListenAndServe())
-}
-
-func unused() {
-	// this function does nothin
-	// and is called nowhere
-	fmt.Sprintf("hello")
 }
