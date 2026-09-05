@@ -6,11 +6,11 @@ A collection of projects completed as part of my coursework on [Boot.dev](https:
 
 | Project | CI | Description |
 | --- | --- | --- |
-| [`chirpy`](./chirpy) | | HTTP web server built from scratch in Go, including routing, JSON handling, and a REST API backed by a database. |
-| [`pokedexcli`](./pokedexcli) | | A CLI Pokedex in Go that consumes the PokeAPI REST API, with caching and a REPL-style interface. |
-| [`gator`](./gator) | | RSS feed aggregator CLI in Go with persistent storage (PostgreSQL) and scheduled feed fetching. |
-| [`http-from-tcp`](./http-from-tcp) | | Implements an HTTP server from raw TCP sockets in Go, without using the standard `net/http` package, to understand the protocol at a low level. |
-| [`learn-pub-sub`](./learn-pub-sub) | | Pub/sub messaging system in Go using RabbitMQ, built around a multiplayer game simulation. |
+| [`chirpy`](./chirpy) | ![chirpy](https://github.com/lennago/bootdev/actions/workflows/chirpy.yml/badge.svg) | HTTP web server built from scratch in Go, including routing, JSON handling, and a REST API backed by a database. |
+| [`pokedexcli`](./pokedexcli) | ![pokedexcli](https://github.com/lennago/bootdev/actions/workflows/pokedexcli.yml/badge.svg) | A CLI Pokedex in Go that consumes the PokeAPI REST API, with caching and a REPL-style interface. |
+| [`gator`](./gator) | ![gator](https://github.com/lennago/bootdev/actions/workflows/gator.yml/badge.svg) | RSS feed aggregator CLI in Go with persistent storage (PostgreSQL) and scheduled feed fetching. |
+| [`http-from-tcp`](./http-from-tcp) | ![http-from-tcp](https://github.com/lennago/bootdev/actions/workflows/http-from-tcp.yml/badge.svg) | Implements an HTTP server from raw TCP sockets in Go, without using the standard `net/http` package, to understand the protocol at a low level. |
+| [`learn-pub-sub`](./learn-pub-sub) | ![learn-pub-sub](https://github.com/lennago/bootdev/actions/workflows/learn-pub-sub.yml/badge.svg) | Pub/sub messaging system in Go using RabbitMQ, built around a multiplayer game simulation. |
 | [`kubernetes`](./kubernetes) | | Deploying and orchestrating an application with Kubernetes. |
 | [`static-site-generator`](./static-site-generator) | | A static site generator written in Python that converts Markdown files into HTML pages. |
 | [`asteroids`](./asteroids) | | A recreation of the classic Asteroids arcade game in Python using Pygame. |
